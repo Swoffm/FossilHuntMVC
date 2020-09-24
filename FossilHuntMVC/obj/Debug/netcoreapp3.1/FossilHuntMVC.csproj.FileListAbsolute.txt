@@ -417,3 +417,4 @@ C:\Users\gavin\workspace\FossilHuntMVC\FossilHuntMVC\obj\Debug\netcoreapp3.1\Fos
 C:\Users\gavin\workspace\FossilHuntMVC\FossilHuntMVC\obj\Debug\netcoreapp3.1\FossilHuntMVC.dll
 C:\Users\gavin\workspace\FossilHuntMVC\FossilHuntMVC\obj\Debug\netcoreapp3.1\FossilHuntMVC.pdb
 C:\Users\gavin\workspace\FossilHuntMVC\FossilHuntMVC\obj\Debug\netcoreapp3.1\FossilHuntMVC.genruntimeconfig.cache
+C:\Users\gavin\workspace\FossilHuntMVC\FossilHuntMVC\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
