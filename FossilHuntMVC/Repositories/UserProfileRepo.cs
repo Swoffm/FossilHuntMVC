@@ -21,9 +21,11 @@ namespace FossilHuntMVC.Repositories
             using (var conn = Connection)
             {
                 conn.Open();
-                using (var cmd = conn.CreateCommand())
+                using(var cmd = conn.CreateCommand())
                 {
                     cmd.CommandText = @"SELECT id, username, email FROM Users WHERE email = @email AND username = @username";
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@username", username);
 
                     User user = null;
                     var reader = cmd.ExecuteReader();
