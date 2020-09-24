@@ -1,4 +1,5 @@
 ﻿using FossilHuntMVC.Models;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -16,10 +17,11 @@ namespace FossilHuntMVC.Repositories
 
         public User GetByEmail(string email, string username)
         {
+
             using (var conn = Connection)
             {
                 conn.Open();
-                using(var cmd = conn.CreateCommand())
+                using (var cmd = conn.CreateCommand())
                 {
                     cmd.CommandText = @"SELECT id, username, email FROM Users WHERE email = @email AND username = @username";
 
