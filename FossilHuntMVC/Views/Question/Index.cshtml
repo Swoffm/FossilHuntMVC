@@ -30,14 +30,18 @@
                 <tr>
                     
                     <td>
-                        @Html.DisplayFor(modelItem => item.user.Username)
+                        <a asp-action="Index">@Html.DisplayFor(modelItem => item.user.Username)</a>
+
+                       
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.question)
+                        @* need to add asp-route-id *@
+                        <a asp-action="Index">@Html.DisplayFor(modelItem => item.question)</a>
+                       
                     </td>
                     <td>
-                        <i class="fas fa-pencil-alt"></i>
-                        @*  @Html.DisplayFor(modelItem => item.StateId)*@
+
+                      @*  @Html.DisplayFor(modelItem => item.StateId)*@
                     </td>
                     <td>
                         @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

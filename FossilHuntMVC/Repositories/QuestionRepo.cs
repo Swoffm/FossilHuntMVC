@@ -37,7 +37,7 @@ namespace FossilHuntMVC.Repositories
                             question = reader.GetString(reader.GetOrdinal("Question")),
                             user = new User
                             {
-                                //might need to add user's email as well
+                                //might need to add user's email as well also need to add user ID
                                 Username = reader.GetString(reader.GetOrdinal("username"))
                             }
 
