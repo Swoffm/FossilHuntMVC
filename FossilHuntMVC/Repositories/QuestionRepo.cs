@@ -33,10 +33,11 @@ namespace FossilHuntMVC.Repositories
                         {
                             Id = reader.GetInt32(reader.GetOrdinal("questionId")),
                             userId = reader.GetInt32(reader.GetOrdinal("UserId")),
-                            StateId = reader.GetInt32(reader.GetOrdinal("StateId")),
+                            //StateId = reader.GetInt32(reader.GetOrdinal("StateId")),
                             question = reader.GetString(reader.GetOrdinal("Question")),
                             user = new User
                             {
+                                //might need to add user's email as well
                                 Username = reader.GetString(reader.GetOrdinal("username"))
                             }
 
@@ -46,7 +47,7 @@ namespace FossilHuntMVC.Repositories
                     }
 
                     reader.Close();
-                    return QuestionList
+                    return QuestionList;
                 }
             }
         }

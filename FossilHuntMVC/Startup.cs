@@ -31,6 +31,7 @@ namespace FossilHuntMVC
                 .AddCookie();
 
             services.AddTransient<IUserProfileRepository, UserProfileRepo>();
+            services.AddTransient<IQuestionRepo, QuestionRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

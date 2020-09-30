@@ -418,3 +418,4 @@ C:\Users\gavin\workspace\FossilHuntMVC\FossilHuntMVC\obj\Debug\netcoreapp3.1\Fos
 C:\Users\gavin\workspace\FossilHuntMVC\FossilHuntMVC\obj\Debug\netcoreapp3.1\FossilHuntMVC.pdb
 C:\Users\gavin\workspace\FossilHuntMVC\FossilHuntMVC\obj\Debug\netcoreapp3.1\FossilHuntMVC.genruntimeconfig.cache
 C:\Users\gavin\workspace\FossilHuntMVC\FossilHuntMVC\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\gavin\workspace\FossilHuntMVC\FossilHuntMVC\obj\Debug\netcoreapp3.1\Razor\Views\Question\Index.cshtml.g.cs
