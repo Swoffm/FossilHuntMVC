@@ -27,28 +27,29 @@
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
-                    
-                    <td>
-                        <a asp-action="Index">@Html.DisplayFor(modelItem => item.user.Username)</a>
 
-                       
-                    </td>
-                    <td>
-                        @* need to add asp-route-id *@
-                        <a asp-action="Index">@Html.DisplayFor(modelItem => item.question)</a>
-                       
-                    </td>
-                    <td>
+            <tr>
 
-                      @*  @Html.DisplayFor(modelItem => item.StateId)*@
-                    </td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                    </td>
-                </tr>
+                <td>
+                    <a asp-action="Index">@Html.DisplayFor(modelItem => item.user.Username)</a>
+
+
+                </td>
+                <td>
+                    @* need to add asp-route-id *@
+                    <a asp-action="Index">@Html.DisplayFor(modelItem => item.question)</a>
+
+                </td>
+                <td>
+
+                    @*  @Html.DisplayFor(modelItem => item.StateId)*@
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
             }
         </tbody>
     </table>
